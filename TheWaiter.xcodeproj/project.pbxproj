@@ -14,6 +14,9 @@
 		6658B5C62228473600835D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6658B5C42228473600835D88 /* LaunchScreen.storyboard */; };
 		6658B5D12228473700835D88 /* TheWaiterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658B5D02228473700835D88 /* TheWaiterTests.swift */; };
 		6658B5DC2228473700835D88 /* TheWaiterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658B5DB2228473700835D88 /* TheWaiterUITests.swift */; };
+		6658B5EA2228481800835D88 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658B5E92228481800835D88 /* ScannerViewController.swift */; };
+		6658B5EC22284C4A00835D88 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658B5EB22284C4A00835D88 /* MenuViewController.swift */; };
+		6658B5EE22284DD300835D88 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658B5ED22284DD300835D88 /* Dish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		6658B5D72228473700835D88 /* TheWaiterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheWaiterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6658B5DB2228473700835D88 /* TheWaiterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheWaiterUITests.swift; sourceTree = "<group>"; };
 		6658B5DD2228473700835D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6658B5E92228481800835D88 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		6658B5EB22284C4A00835D88 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6658B5ED22284DD300835D88 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				6658B5BB2228473400835D88 /* AppDelegate.swift */,
+				6658B5EB22284C4A00835D88 /* MenuViewController.swift */,
 				6658B5BD2228473400835D88 /* ViewController.swift */,
+				6658B5E92228481800835D88 /* ScannerViewController.swift */,
 				6658B5BF2228473400835D88 /* Main.storyboard */,
 				6658B5C22228473600835D88 /* Assets.xcassets */,
 				6658B5C42228473600835D88 /* LaunchScreen.storyboard */,
 				6658B5C72228473600835D88 /* Info.plist */,
+				6658B5ED22284DD300835D88 /* Dish.swift */,
 			);
 			path = TheWaiter;
 			sourceTree = "<group>";
@@ -257,7 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6658B5BE2228473400835D88 /* ViewController.swift in Sources */,
+				6658B5EE22284DD300835D88 /* Dish.swift in Sources */,
+				6658B5EA2228481800835D88 /* ScannerViewController.swift in Sources */,
 				6658B5BC2228473400835D88 /* AppDelegate.swift in Sources */,
+				6658B5EC22284C4A00835D88 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
