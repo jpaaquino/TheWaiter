@@ -11,7 +11,11 @@ import UIKit
 
 class MenuViewModel {
     
-    let restaurant: Restaurant = Restaurant.terraBrasil
+    init(restaurant: Restaurant){
+    self.restaurant = restaurant
+    }
+    
+    let restaurant: Restaurant
         
     var restaurantName: String {
         return restaurant.name
