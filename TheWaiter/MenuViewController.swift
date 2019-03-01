@@ -14,34 +14,44 @@ class DishCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var valorLabel: UILabel!
     
+    func configure(dish: Dish){
+        self.nameLabel.text = dish.name
+        self.descriptionLabel.text = dish.description
+        self.valorLabel.text = dish.formattedPrice
+    }
+    
 }
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var restaurant: Restaurant = Restaurant.terraBrasil
     
+    var model: MenuViewModel!
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = restaurant.name
+        self.title = model.restaurantName
+
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        //Make Cell resize to fit content
+        return UITableView.automaticDimension
 
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return UITableView.automaticDimension
     }
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurant.menu.dishes.count
+        return model.numberOfItems
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! DishCell
-        let dish = restaurant.menu.dishes[indexPath.row]
-        cell.nameLabel.text = dish.name
-        cell.descriptionLabel.text = dish.description
-        cell.valorLabel.text = dish.formattedPrice
+        let dish: Dish = model.dishes[indexPath.row]
+        cell.configure(dish: dish)
         
         return cell
     }

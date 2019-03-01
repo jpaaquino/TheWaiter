@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661DFF2C2229AEC40022E478 /* ExtensionDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DFF2B2229AEC40022E478 /* ExtensionDouble.swift */; };
+		661DFF2E2229AF6E0022E478 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DFF2D2229AF6E0022E478 /* MenuViewModel.swift */; };
 		6658B5BC2228473400835D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658B5BB2228473400835D88 /* AppDelegate.swift */; };
 		6658B5BE2228473400835D88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658B5BD2228473400835D88 /* ViewController.swift */; };
 		6658B5C12228473400835D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6658B5BF2228473400835D88 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		661DFF2B2229AEC40022E478 /* ExtensionDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDouble.swift; sourceTree = "<group>"; };
+		661DFF2D2229AF6E0022E478 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		6658B5B82228473400835D88 /* TheWaiter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWaiter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6658B5BB2228473400835D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6658B5BD2228473400835D88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			children = (
 				6658B5BB2228473400835D88 /* AppDelegate.swift */,
 				6658B5EB22284C4A00835D88 /* MenuViewController.swift */,
+				661DFF2D2229AF6E0022E478 /* MenuViewModel.swift */,
 				6658B5BD2228473400835D88 /* ViewController.swift */,
 				6658B5E92228481800835D88 /* ScannerViewController.swift */,
 				6658B5BF2228473400835D88 /* Main.storyboard */,
@@ -112,6 +117,7 @@
 				6658B5C42228473600835D88 /* LaunchScreen.storyboard */,
 				6658B5C72228473600835D88 /* Info.plist */,
 				6658B5ED22284DD300835D88 /* Dish.swift */,
+				661DFF2B2229AEC40022E478 /* ExtensionDouble.swift */,
 			);
 			path = TheWaiter;
 			sourceTree = "<group>";
@@ -265,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661DFF2C2229AEC40022E478 /* ExtensionDouble.swift in Sources */,
+				661DFF2E2229AF6E0022E478 /* MenuViewModel.swift in Sources */,
 				6658B5BE2228473400835D88 /* ViewController.swift in Sources */,
 				6658B5EE22284DD300835D88 /* Dish.swift in Sources */,
 				6658B5EA2228481800835D88 /* ScannerViewController.swift in Sources */,

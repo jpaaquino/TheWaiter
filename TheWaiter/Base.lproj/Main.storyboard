@@ -52,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bC4-jD-Lb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1511" y="134"/>
+            <point key="canvasLocation" x="1509.5999999999999" y="133.5832083958021"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="Kj1-EW-k11">
@@ -73,32 +73,48 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Casquinha de carangueijo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igd-KD-UBg">
-                                                    <rect key="frame" x="15" y="11" width="289" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Casquinha de carangueijo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igd-KD-UBg">
+                                                    <rect key="frame" x="15" y="12" width="267" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tradicional massa de caranguejo refogada e servida com a mais autêntica farofa paraense" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BF-6a-aTf">
-                                                    <rect key="frame" x="15" y="40" width="250" height="69"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tradicional massa de caranguejo refogada e servida com a mais autêntica farofa paraense" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BF-6a-aTf">
+                                                    <rect key="frame" x="15" y="40.5" width="267" height="61"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$ 19,25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-uM-p1u">
-                                                    <rect key="frame" x="15" y="116.5" width="72.5" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 19,25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-uM-p1u">
+                                                    <rect key="frame" x="15" y="109.5" width="72.5" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="zcf-zB-RMe"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" red="0.65490196079999996" green="0.25098039220000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="casquinha" translatesAutoresizingMaskIntoConstraints="NO" id="8f1-3N-QIQ">
-                                                    <rect key="frame" x="285" y="39" width="75" height="70"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="casquinha" translatesAutoresizingMaskIntoConstraints="NO" id="8f1-3N-QIQ">
+                                                    <rect key="frame" x="290" y="40" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="Mtt-TO-JK0"/>
+                                                        <constraint firstAttribute="width" constant="70" id="cqe-cr-l1y"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9BF-6a-aTf" firstAttribute="trailing" secondItem="igd-KD-UBg" secondAttribute="trailing" id="5eV-u9-XNf"/>
+                                                <constraint firstItem="8f1-3N-QIQ" firstAttribute="centerY" secondItem="ME0-Vr-NyO" secondAttribute="centerY" id="7TQ-eZ-wR5"/>
+                                                <constraint firstItem="2Og-uM-p1u" firstAttribute="leading" secondItem="ME0-Vr-NyO" secondAttribute="leading" constant="15" id="CLq-gz-d3w"/>
+                                                <constraint firstItem="9BF-6a-aTf" firstAttribute="leading" secondItem="igd-KD-UBg" secondAttribute="leading" id="CWB-Ng-zoC"/>
+                                                <constraint firstItem="igd-KD-UBg" firstAttribute="top" secondItem="ME0-Vr-NyO" secondAttribute="top" constant="12" id="Qgd-Iy-zkd"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2Og-uM-p1u" secondAttribute="bottom" constant="8" id="eUB-Kb-qNX"/>
+                                                <constraint firstAttribute="trailing" secondItem="8f1-3N-QIQ" secondAttribute="trailing" constant="15" id="hfh-Ue-U45"/>
+                                                <constraint firstItem="9BF-6a-aTf" firstAttribute="top" secondItem="igd-KD-UBg" secondAttribute="bottom" constant="8" id="nj7-1c-oEq"/>
+                                                <constraint firstItem="8f1-3N-QIQ" firstAttribute="leading" secondItem="igd-KD-UBg" secondAttribute="trailing" constant="8" id="vYc-Yd-NmH"/>
+                                                <constraint firstItem="igd-KD-UBg" firstAttribute="leading" secondItem="ME0-Vr-NyO" secondAttribute="leading" constant="15" id="wIa-jd-cT5"/>
+                                                <constraint firstItem="2Og-uM-p1u" firstAttribute="top" secondItem="9BF-6a-aTf" secondAttribute="bottom" constant="8" id="ybF-RW-ke6"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="9BF-6a-aTf" id="Dvj-ZP-PzL"/>
@@ -128,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zks-Si-xQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2207.1999999999998" y="134.48275862068968"/>
+            <point key="canvasLocation" x="2348" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K3f-PT-Z5k">

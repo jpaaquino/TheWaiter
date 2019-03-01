@@ -44,8 +44,17 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         previewLayer.frame = view.layer.bounds
         previewLayer.videoGravity = .resizeAspectFill
         view.layer.addSublayer(previewLayer)
+        setupView()
         
         captureSession.startRunning()
+    }
+    
+    func setupView(){
+        
+        let square = UIImageView(image: UIImage(named: "check-box-empty"))
+        square.frame.size = CGSize(width: 300.0, height: 300.0)
+        square.center = self.view.center
+        previewLayer.addSublayer(square.layer)
     }
     
     func failed() {
@@ -96,5 +105,13 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "MenuViewController") {
+            let vc = segue.destination as! MenuViewController
+            vc.model = MenuViewModel()
+        }
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 
 class Restaurant{
-    static let menuItems = Menu(dishes: [Dish(name: "Carne Assada", description: "Arroz, feijão, batata cozida e salada!", price: 23.99, addOns: []),Dish(name: "Espaguete com frango assado", description: "", price: 23.00, addOns: []),Dish(name: "Contra Filé Especial", description: "Arroz, feijão, Legumes ou fritas!", price: 33.00, addOns: []) ])
+    static let menuItems = Menu(dishes: [Dish(name: "Carne Assada", description: "Arroz, feijão, batata cozida e salada!\nUm dos nossos favoritos\nExperimente agora!", price: 23.99, addOns: []),Dish(name: "Espaguete com frango assado", description: "", price: 23.00, addOns: []),Dish(name: "Contra Filé Especial", description: "Arroz, feijão, Legumes ou fritas!", price: 33.00, addOns: []) ])
 
     
     static let terraBrasil = Restaurant(name: "Terra Brasil Restaurante", menu: Restaurant.menuItems, logo: UIImage(named: "Logo-Terra-Brasil"))
@@ -42,8 +42,8 @@ class Dish {
     var image: UIImage?
     let addOns: [AddOn]
     
-    var formattedPrice: String {
-        return "R$ \(price)"
+    var formattedPrice: String? {
+        return price.convertToReaisFormat()
     }
     
     init(name: String, description: String, price: Double, addOns:[AddOn]){
