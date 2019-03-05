@@ -22,15 +22,39 @@ class MenuViewModel {
     }
     
     var numberOfItems: Int {
-        return restaurant.menu.dishes.count
+        return restaurant.dishes.count
     }
     
     var dishes:[Dish]{
-        return restaurant.menu.dishes
+        return restaurant.dishes
+    }
+    
+    var dishOrders:[DishOrder]{
+        get {
+        return restaurant.dishOrders
+        }
+    }
+    func addDishOrder(dishOrder: DishOrder){
+        restaurant.dishOrders.append(dishOrder)
+    }
+    
+    func dishViewModel(for index: Int) -> DishViewModel {
+        let dish: Dish = self.dishes[index]
+        return DishViewModel(dish: dish)
+    }
+    
+    func dishOrdersForDish(for index:Int) -> Int {
+        let dish: Dish = self.dishes[index]
+        let dishId = dish.id
+        var n = 0
+        for eachDish in dishOrders {
+            if(eachDish.id == dishId){
+                n += 1
+            }
+        }
+        return n
+
     }
     
 
-    
-    
-    
 }

@@ -107,11 +107,4 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         return .portrait
     }
     
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "MenuViewController") {
-            let vc = segue.destination as! MenuViewController
-            vc.viewModel = MenuViewModel(restaurant: Restaurant.terraBrasil)
-        }
-    }
 }

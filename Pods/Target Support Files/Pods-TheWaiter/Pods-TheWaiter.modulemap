@@ -1,0 +1,6 @@
+framework module Pods_TheWaiter {
+  umbrella header "Pods-TheWaiter-umbrella.h"
+
+  export *
+  module * { export * }
+}

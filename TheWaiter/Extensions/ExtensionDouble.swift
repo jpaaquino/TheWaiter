@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Double {
+public extension Double {
     
     func convertToReaisFormat() -> String?{
         let formatter = NumberFormatter()
